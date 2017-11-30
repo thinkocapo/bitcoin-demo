@@ -20,3 +20,16 @@ cd ~/Library/Application\ Support/Bitcoin
 ```
 tail -f debug.log
 ```
+
+## Notes
+* The bitcoin program itself is written in **c++**
+* The pruning node flag *-prune=550* allows your bitcion program to only download 550 MB of transactions data at a time, for validating. It validates the data, then gets rid of it so it can process 550 MB more of data. Otherwise *bitcoind* may download the entire blockchain history (+80 GB) and store it on your machine.
+
+## Continuing Education
+A well-respected and authoritative resource on Bitcoin called Mastering Bitcoin is written by pioneer Andreas Antonopolous.
+here is the [link](https://unglueit-files.s3.amazonaws.com/ebf/05db7df4f31840f0a873d6ea14dcc28d.pdf) to it
+I recommend reading:
+* The introduction of every chapter 
+* Chapters 1 and 2 and stop at pg. 19
+* Chp 6 pg 139 - 143
+* Chp 9 to pg 220
