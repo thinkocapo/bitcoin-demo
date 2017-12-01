@@ -8,6 +8,8 @@ The bitcoin program itself is called **bitcoind**. These are instructions on how
 ```
 git clone https://github.com/bitcoin/bitcoin
 ```
+The program is not ready to run yet, its needs to be *built* from the code you installed. The instructions on how to do so are here [Mac OS Instructions](https://github.com/bitcoin/bitcoin/blob/master/doc/build-osx.md) if not Mac OS then [here](https://github.com/bitcoin/bitcoin/tree/master/doc)
+
 2. Run the bitcoind (bitcoin) application in pruning mode
 ```
 bitcoind -prune=550 -daemon
@@ -22,7 +24,7 @@ tail -f debug.log
 ```
 
 ## Notes
-* The bitcoin program itself is written in **c++**
+* The bitcoin program itself is written in *c++*
 * The pruning node flag *-prune=550* allows your bitcion program to only download 550 MB of transactions data at a time, for validating. It validates the data, then gets rid of it so it can process 550 MB more of data. Otherwise *bitcoind* may download the entire blockchain history (+80 GB) and store it on your machine.
 
 ## Continuing Education
